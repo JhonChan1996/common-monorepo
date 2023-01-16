@@ -1,0 +1,37 @@
+{
+  "name": "common-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "main": "index.js",
+  "type": "module",
+  "workspaces": [
+    "commitlint/**",
+    "components/**",
+    "docs/**",
+    "eslint/**",
+    "request/**",
+    "scripts/**",
+    "utils/**"
+  ],
+  "scripts": {
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache --fix"
+  },
+  "devDependencies": {
+    "@common/eslint": "workspace:*",
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "fast-glob": "^3.2.12",
+    "cz-git": "^1.4.1"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  }
+}

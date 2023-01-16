@@ -1,0 +1,8 @@
+packages:
+  - "commitlint/**"
+  - "components/**"
+  - "docs/**"
+  - "eslint/**"
+  - "request/**"
+  - "scripts/**"
+  - "utils/**"
