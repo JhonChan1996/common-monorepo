@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["@common/commitlint"],
+  extends: ['@common/commitlint'],
 };
