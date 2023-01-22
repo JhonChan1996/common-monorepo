@@ -2,7 +2,7 @@ packages:
   - "commitlint/**"
   - "components/**"
   - "docs/**"
-  - "eslint/**"
+  - "eslint-config/**"
   - "request/**"
   - "scripts/**"
   - "utils/**"

@@ -26,17 +26,12 @@ pnpm install
 6. 修改 package.json 文件的 main 字段为 index.js
 7. 修改 pnpm-workspace.yaml 文件的 packages 字段,新增一条数据
 8. 修改根目录下的 package.json 文件的 workspaces 字段,新增一条数据
-
-```
-git submodule add <url> <repo_name>
-```
-
 ## 使用模块
 
 > 以使用一个名为 demo 的模块为例
 
 1. 进入需要使用模块的目录
-2. pnpm add @common/demo
+2. pnpm add @common/demo -w
 3. 在需要使用模块的文件中引入模块
 
 # 模块更新

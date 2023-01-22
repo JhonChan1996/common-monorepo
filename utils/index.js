@@ -1,1 +1,1 @@
-console.log("import @common/utils success");
+console.log('import @common/utils success');

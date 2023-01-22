@@ -5,8 +5,8 @@
 </template>
 
 <script setup>
-import packageConfig from "../package.json";
+import packageConfig from '../package.json';
 const onButtonClick = () => {
-  console.log("button clicked");
+  console.log('button clicked');
 };
 </script>

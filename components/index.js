@@ -1,1 +1,1 @@
-export * from "./cButton";
+export * from './cButton.js';

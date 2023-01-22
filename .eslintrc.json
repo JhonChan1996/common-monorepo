@@ -1,4 +1,4 @@
 {
   "root": true,
-  "extends": ["@common/eslint"]
+  "extends": ["@common/eslint-config-base"]
 }

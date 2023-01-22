@@ -2,9 +2,9 @@
   "name": "@common/request",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {},
   "keywords": [],
+  "license": "ISC",
   "author": "",
-  "license": "ISC"
+  "main": "index.js",
+  "scripts": {}
 }

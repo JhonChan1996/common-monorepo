@@ -1,13 +1,13 @@
-console.log("import @common/eslint success");
-const { defineConfig } = require('eslint-define-config')
-
+console.log('import @common/eslint-config-base success');
+// import { defineConfig } from "eslint-define-config";
+const { defineConfig } = require('eslint-define-config');
 module.exports = defineConfig({
   env: {
     es6: true,
     browser: true,
     node: true,
   },
-  plugins: ['@typescript-eslint', 'prettier', 'unicorn'],
+  plugins: ['@typescript-eslint', 'prettier', 'unicorn', 'html'],
   extends: [
     'eslint:recommended',
     'plugin:import/recommended',
@@ -17,6 +17,7 @@ module.exports = defineConfig({
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
+    'plugin:prettier/recommended',
   ],
   settings: {
     'import/resolver': {
@@ -137,7 +138,7 @@ module.exports = defineConfig({
   rules: {
     // js/ts
     camelcase: ['error', { properties: 'never' }],
-    'no-console': ['warn', { allow: ['error'] }],
+    // "no-console": ["warn", { allow: ["error"] }],
     'no-debugger': 'warn',
     'no-constant-condition': ['error', { checkLoops: false }],
     'no-restricted-syntax': ['error', 'LabeledStatement', 'WithStatement'],
@@ -306,4 +307,4 @@ module.exports = defineConfig({
     'unicorn/prefer-type-error': 'error',
     'unicorn/throw-new-error': 'error',
   },
-})
+});

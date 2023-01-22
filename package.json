@@ -3,28 +3,35 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "author": "",
   "license": "ISC",
+  "author": "",
   "main": "index.js",
-  "type": "module",
   "workspaces": [
     "commitlint/**",
     "components/**",
     "docs/**",
-    "eslint/**",
+    "eslint-config/**",
     "request/**",
     "scripts/**",
     "utils/**"
   ],
   "scripts": {
-    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache --fix"
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache --fix",
+    "commit": "git-cz",
+    "prepare": "husky install"
+  },
+  "peerDependencies": {
+    "eslint": ">= 8"
   },
   "devDependencies": {
-    "@common/eslint": "workspace:*",
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
+    "@common/commitlint": "workspace:^0.0.1",
+    "@common/eslint-config-base": "workspace:*",
+    "cz-git": "^1.4.1",
     "fast-glob": "^3.2.12",
-    "cz-git": "^1.4.1"
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0"
   },
   "engines": {
     "node": ">= 16"
@@ -33,5 +40,12 @@
     "commitizen": {
       "path": "node_modules/cz-git"
     }
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,md,json}": [
+      "prettier --write",
+      "eslint --cache --fix",
+      "git add"
+    ]
   }
 }

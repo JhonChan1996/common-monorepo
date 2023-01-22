@@ -1,1 +1,1 @@
-console.log("import @common/scripts success");
+console.log('import @common/scripts success');
