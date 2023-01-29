@@ -1,4 +1,3 @@
 module.exports = {
-  semi: true,
-  singleQuote: true,
+  ...require('@common/prettier-config-base'),
 };

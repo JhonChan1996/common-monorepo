@@ -8,6 +8,7 @@ importers:
       '@commitlint/config-conventional': ^17.4.2
       '@common/commitlint': workspace:^0.0.1
       '@common/eslint-config-base': workspace:*
+      '@common/prettier-config-base': workspace:^0.0.1
       cz-git: ^1.4.1
       fast-glob: ^3.2.12
       husky: ^8.0.3
@@ -17,6 +18,7 @@ importers:
       '@commitlint/config-conventional': registry.npmmirror.com/@commitlint/config-conventional/17.4.2
       '@common/commitlint': link:commitlint
       '@common/eslint-config-base': link:eslint-config
+      '@common/prettier-config-base': link:prettier-config
       cz-git: registry.npmmirror.com/cz-git/1.4.1
       fast-glob: registry.npmmirror.com/fast-glob/3.2.12
       husky: registry.npmmirror.com/husky/8.0.3
@@ -41,9 +43,9 @@ importers:
       '@vitejs/plugin-vue': ^4.0.0
       '@vitejs/plugin-vue-jsx': ^3.0.0
       ant-design-vue: ^3.2.15
-      pinia: ^2.0.28
+      pinia: ^2.0.29
       unplugin-vue-components: ^0.22.12
-      vite: ^4.0.0
+      vite: ^4.0.4
       vue: ^3.2.45
     dependencies:
       ant-design-vue: registry.npmmirror.com/ant-design-vue/3.2.15_vue@3.2.45
@@ -74,6 +76,7 @@ importers:
       eslint-plugin-unicorn: ^43.0.2
       eslint-plugin-vue: ^9.1.1
       jsonc-eslint-parser: ^2.1.0
+      prettier: ^2.8.3
       typescript: ^4.7.4
       yaml-eslint-parser: ^1.0.1
     dependencies:
@@ -86,14 +89,18 @@ importers:
       eslint-plugin-import: registry.npmmirror.com/eslint-plugin-import/2.27.5_2l6piu6guil2f63lj3qmhzbnn4
       eslint-plugin-jsonc: registry.npmmirror.com/eslint-plugin-jsonc/2.6.0_eslint@8.32.0
       eslint-plugin-markdown: registry.npmmirror.com/eslint-plugin-markdown/3.0.0_eslint@8.32.0
-      eslint-plugin-prettier: registry.npmmirror.com/eslint-plugin-prettier/4.2.1_th6pcbf3nm4pj75asb7sqi32zq
+      eslint-plugin-prettier: registry.npmmirror.com/eslint-plugin-prettier/4.2.1_cn4lalcyadplruoxa5mhp7j3dq
       eslint-plugin-unicorn: registry.npmmirror.com/eslint-plugin-unicorn/43.0.2_eslint@8.32.0
       eslint-plugin-vue: registry.npmmirror.com/eslint-plugin-vue/9.9.0_eslint@8.32.0
       jsonc-eslint-parser: registry.npmmirror.com/jsonc-eslint-parser/2.1.0
+      prettier: registry.npmmirror.com/prettier/2.8.3
       typescript: registry.npmmirror.com/typescript/4.9.4
       yaml-eslint-parser: registry.npmmirror.com/yaml-eslint-parser/1.1.0
     devDependencies:
       eslint: registry.npmmirror.com/eslint/8.32.0
+
+  prettier-config:
+    specifiers: {}
 
   request:
     specifiers:
@@ -160,10 +167,10 @@ packages:
     dependencies:
       '@babel/highlight': registry.npmmirror.com/@babel/highlight/7.18.6
 
-  registry.npmmirror.com/@babel/compat-data/7.20.10:
-    resolution: {integrity: sha512-sEnuDPpOJR/fcafHMjpcpGN5M2jbUGUHwmuWKM/YdPzeEDJg8bgmbcWQFUfE32MQjti1koACvoPVsDe8Uq+idg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/compat-data/-/compat-data-7.20.10.tgz}
+  registry.npmmirror.com/@babel/compat-data/7.20.14:
+    resolution: {integrity: sha512-0YpKHD6ImkWMEINCyDAD0HLLUH/lPCefG8ld9it8DJB2wnApraKuhgYTvTY1z7UFIfBTGy5LwncZ+5HWWGbhFw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/compat-data/-/compat-data-7.20.14.tgz}
     name: '@babel/compat-data'
-    version: 7.20.10
+    version: 7.20.14
     engines: {node: '>=6.9.0'}
     dev: true
 
@@ -175,7 +182,7 @@ packages:
     dependencies:
       '@ampproject/remapping': registry.npmmirror.com/@ampproject/remapping/2.2.0
       '@babel/code-frame': registry.npmmirror.com/@babel/code-frame/7.18.6
-      '@babel/generator': registry.npmmirror.com/@babel/generator/7.20.7
+      '@babel/generator': registry.npmmirror.com/@babel/generator/7.20.14
       '@babel/helper-compilation-targets': registry.npmmirror.com/@babel/helper-compilation-targets/7.20.7_@babel+core@7.20.12
       '@babel/helper-module-transforms': registry.npmmirror.com/@babel/helper-module-transforms/7.20.11
       '@babel/helpers': registry.npmmirror.com/@babel/helpers/7.20.13
@@ -192,10 +199,10 @@ packages:
       - supports-color
     dev: true
 
-  registry.npmmirror.com/@babel/generator/7.20.7:
-    resolution: {integrity: sha512-7wqMOJq8doJMZmP4ApXTzLxSr7+oO2jroJURrVEp6XShrQUObV8Tq/D0NCcoYg2uHqUrjzO0zwBjoYzelxK+sw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/generator/-/generator-7.20.7.tgz}
+  registry.npmmirror.com/@babel/generator/7.20.14:
+    resolution: {integrity: sha512-AEmuXHdcD3A52HHXxaTmYlb8q/xMEhoRP67B3T4Oq7lbmSoqroMZzjnGj3+i1io3pdnF8iBYVu4Ilj+c4hBxYg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/generator/-/generator-7.20.14.tgz}
     name: '@babel/generator'
-    version: 7.20.7
+    version: 7.20.14
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/types': registry.npmmirror.com/@babel/types/7.20.7
@@ -221,7 +228,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0
     dependencies:
-      '@babel/compat-data': registry.npmmirror.com/@babel/compat-data/7.20.10
+      '@babel/compat-data': registry.npmmirror.com/@babel/compat-data/7.20.14
       '@babel/core': registry.npmmirror.com/@babel/core/7.20.12
       '@babel/helper-validator-option': registry.npmmirror.com/@babel/helper-validator-option/7.18.6
       browserslist: registry.npmmirror.com/browserslist/4.21.4
@@ -493,7 +500,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/code-frame': registry.npmmirror.com/@babel/code-frame/7.18.6
-      '@babel/generator': registry.npmmirror.com/@babel/generator/7.20.7
+      '@babel/generator': registry.npmmirror.com/@babel/generator/7.20.14
       '@babel/helper-environment-visitor': registry.npmmirror.com/@babel/helper-environment-visitor/7.18.9
       '@babel/helper-function-name': registry.npmmirror.com/@babel/helper-function-name/7.19.0
       '@babel/helper-hoist-variables': registry.npmmirror.com/@babel/helper-hoist-variables/7.18.6
@@ -1546,6 +1553,13 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
+  registry.npmmirror.com/acorn/8.8.2:
+    resolution: {integrity: sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/acorn/-/acorn-8.8.2.tgz}
+    name: acorn
+    version: 8.8.2
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
   registry.npmmirror.com/aggregate-error/3.1.0:
     resolution: {integrity: sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/aggregate-error/-/aggregate-error-3.1.0.tgz}
     name: aggregate-error
@@ -1822,7 +1836,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: registry.npmmirror.com/caniuse-lite/1.0.30001446
+      caniuse-lite: registry.npmmirror.com/caniuse-lite/1.0.30001449
       electron-to-chromium: registry.npmmirror.com/electron-to-chromium/1.4.284
       node-releases: registry.npmmirror.com/node-releases/2.0.8
       update-browserslist-db: registry.npmmirror.com/update-browserslist-db/1.0.10_browserslist@4.21.4
@@ -1875,10 +1889,10 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  registry.npmmirror.com/caniuse-lite/1.0.30001446:
-    resolution: {integrity: sha512-fEoga4PrImGcwUUGEol/PoFCSBnSkA9drgdkxXkJLsUBOnJ8rs3zDv6ApqYXGQFOyMPsjh79naWhF4DAxbF8rw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001446.tgz}
+  registry.npmmirror.com/caniuse-lite/1.0.30001449:
+    resolution: {integrity: sha512-CPB+UL9XMT/Av+pJxCKGhdx+yg1hzplvFJQlJ2n68PyQGMz9L/E2zCyLdOL8uasbouTUgnPl+y0tccI/se+BEw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001449.tgz}
     name: caniuse-lite
-    version: 1.0.30001446
+    version: 1.0.30001449
     dev: true
 
   registry.npmmirror.com/chalk/2.4.2:
@@ -2657,7 +2671,7 @@ packages:
       - supports-color
     dev: false
 
-  registry.npmmirror.com/eslint-plugin-prettier/4.2.1_th6pcbf3nm4pj75asb7sqi32zq:
+  registry.npmmirror.com/eslint-plugin-prettier/4.2.1_cn4lalcyadplruoxa5mhp7j3dq:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/eslint-plugin-prettier/-/eslint-plugin-prettier-4.2.1.tgz}
     id: registry.npmmirror.com/eslint-plugin-prettier/4.2.1
     name: eslint-plugin-prettier
@@ -2673,6 +2687,7 @@ packages:
     dependencies:
       eslint: registry.npmmirror.com/eslint/8.32.0
       eslint-config-prettier: registry.npmmirror.com/eslint-config-prettier/8.6.0_eslint@8.32.0
+      prettier: registry.npmmirror.com/prettier/2.8.3
       prettier-linter-helpers: registry.npmmirror.com/prettier-linter-helpers/1.0.0
     dev: false
 
@@ -4489,6 +4504,14 @@ packages:
       fast-diff: registry.npmmirror.com/fast-diff/1.2.0
     dev: false
 
+  registry.npmmirror.com/prettier/2.8.3:
+    resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/prettier/-/prettier-2.8.3.tgz}
+    name: prettier
+    version: 2.8.3
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: false
+
   registry.npmmirror.com/proxy-from-env/1.1.0:
     resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz}
     name: proxy-from-env
@@ -4683,10 +4706,10 @@ packages:
     dependencies:
       glob: registry.npmmirror.com/glob/7.2.3
 
-  registry.npmmirror.com/rollup/3.10.1:
-    resolution: {integrity: sha512-3Er+yel3bZbZX1g2kjVM+FW+RUWDxbG87fcqFM5/9HbPCTpbVp6JOLn7jlxnNlbu7s/N/uDA4EV/91E2gWnxzw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/rollup/-/rollup-3.10.1.tgz}
+  registry.npmmirror.com/rollup/3.12.0:
+    resolution: {integrity: sha512-4MZ8kA2HNYahIjz63rzrMMRvDqQDeS9LoriJvMuV0V6zIGysP36e9t4yObUfwdT9h/szXoHQideICftcdZklWg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/rollup/-/rollup-3.12.0.tgz}
     name: rollup
-    version: 3.10.1
+    version: 3.12.0
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -4705,7 +4728,7 @@ packages:
     name: rxjs
     version: 7.8.0
     dependencies:
-      tslib: registry.npmmirror.com/tslib/2.4.1
+      tslib: registry.npmmirror.com/tslib/2.5.0
     dev: true
 
   registry.npmmirror.com/safe-buffer/5.2.1:
@@ -5095,7 +5118,7 @@ packages:
       '@tsconfig/node14': registry.npmmirror.com/@tsconfig/node14/1.0.3
       '@tsconfig/node16': registry.npmmirror.com/@tsconfig/node16/1.0.3
       '@types/node': registry.npmmirror.com/@types/node/18.11.18
-      acorn: registry.npmmirror.com/acorn/8.8.1
+      acorn: registry.npmmirror.com/acorn/8.8.2
       acorn-walk: registry.npmmirror.com/acorn-walk/8.2.0
       arg: registry.npmmirror.com/arg/4.1.3
       create-require: registry.npmmirror.com/create-require/1.1.1
@@ -5123,10 +5146,10 @@ packages:
     version: 1.14.1
     dev: false
 
-  registry.npmmirror.com/tslib/2.4.1:
-    resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tslib/-/tslib-2.4.1.tgz}
+  registry.npmmirror.com/tslib/2.5.0:
+    resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tslib/-/tslib-2.5.0.tgz}
     name: tslib
-    version: 2.4.1
+    version: 2.5.0
     dev: true
 
   registry.npmmirror.com/tsutils/3.21.0_typescript@4.9.4:
@@ -5259,7 +5282,7 @@ packages:
     name: unplugin
     version: 1.0.1
     dependencies:
-      acorn: registry.npmmirror.com/acorn/8.8.1
+      acorn: registry.npmmirror.com/acorn/8.8.2
       chokidar: registry.npmmirror.com/chokidar/3.5.3
       webpack-sources: registry.npmmirror.com/webpack-sources/3.2.3
       webpack-virtual-modules: registry.npmmirror.com/webpack-virtual-modules/0.5.0
@@ -5335,7 +5358,7 @@ packages:
       esbuild: registry.npmmirror.com/esbuild/0.16.17
       postcss: registry.npmmirror.com/postcss/8.4.21
       resolve: registry.npmmirror.com/resolve/1.22.1
-      rollup: registry.npmmirror.com/rollup/3.10.1
+      rollup: registry.npmmirror.com/rollup/3.12.0
     optionalDependencies:
       fsevents: registry.npmmirror.com/fsevents/2.3.2
     dev: true

@@ -1,8 +1,9 @@
 packages:
-  - "commitlint/**"
-  - "components/**"
-  - "docs/**"
-  - "eslint-config/**"
-  - "request/**"
-  - "scripts/**"
-  - "utils/**"
+  - 'commitlint/**'
+  - 'components/**'
+  - 'docs/**'
+  - 'eslint-config/**'
+  - 'prettier-config/**'
+  - 'request/**'
+  - 'scripts/**'
+  - 'utils/**'

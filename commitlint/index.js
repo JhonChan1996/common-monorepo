@@ -2,19 +2,21 @@
 // .commitlintrc.js
 // /** @type {import('cz-git').UserConfig} */
 
-// const fg = require("fast-glob");
-// const getPackages = (packagePath) =>
-//   fg.sync("*", { cwd: packagePath, onlyDirectories: true });
-
+const fg = require('fast-glob');
+const getPackages = (packagePath) => {
+  const packages = fg.sync('*', { cwd: packagePath, onlyDirectories: true });
+  return packages.filter((item) => item !== 'node_modules');
+};
 const scopes = [
-  // ...getPackages("apps"),
-  'commitlint',
-  'components',
-  'docs',
-  'eslint-config',
-  'request',
-  'scripts',
-  'utils',
+  ...getPackages('./'),
+  // 'commitlint',
+  // 'components',
+  // 'docs',
+  // 'eslint-config',
+  // 'prettier-config',
+  // 'request',
+  // 'scripts',
+  // 'utils',
 ];
 module.exports = {
   rules: {

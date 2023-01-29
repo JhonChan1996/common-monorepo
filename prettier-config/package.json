@@ -1,0 +1,10 @@
+{
+  "name": "@common/prettier-config-base",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {}
+}
