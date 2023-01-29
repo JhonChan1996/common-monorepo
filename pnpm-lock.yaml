@@ -9,10 +9,13 @@ importers:
       '@common/commitlint': workspace:*
       '@common/eslint-config-base': workspace:*
       '@common/prettier-config-base': workspace:*
+      '@common/utils': workspace:*
       cz-git: ^1.4.1
       fast-glob: ^3.2.12
       husky: ^8.0.3
       lint-staged: ^13.1.0
+    dependencies:
+      '@common/utils': link:utils
     devDependencies:
       '@commitlint/cli': registry.npmmirror.com/@commitlint/cli/17.4.2
       '@commitlint/config-conventional': registry.npmmirror.com/@commitlint/config-conventional/17.4.2

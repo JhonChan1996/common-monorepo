@@ -1,1 +1,2 @@
-export * from './cButton.js';
+import cButton from './cButton';
+export { cButton };

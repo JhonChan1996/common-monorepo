@@ -3,11 +3,12 @@
 // /** @type {import('cz-git').UserConfig} */
 
 const fg = require('fast-glob');
-const getPackages = (packagePath) => {
-  const packages = fg.sync('*', { cwd: packagePath, onlyDirectories: true });
-  return packages.filter((item) => item !== 'node_modules');
+const getFoldersByPath = (FastGlob, path = '', exclude = []) => {
+  const foldersArray = FastGlob.sync('*', { cwd: path, onlyDirectories: true });
+  if (!exclude.length) return foldersArray;
+  return foldersArray.filter((item) => !exclude.includes(item));
 };
-const scopes = getPackages('./');
+const scopes = getFoldersByPath(fg, './', ['node_modules']);
 module.exports = {
   rules: {
     // @see: https://commitlint.js.org/#/reference-rules
