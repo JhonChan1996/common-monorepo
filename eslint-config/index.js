@@ -21,7 +21,9 @@ module.exports = defineConfig({
   ],
   settings: {
     'import/resolver': {
-      node: { extensions: ['.js', '.mjs', '.ts', '.d.ts', '.tsx'] },
+      node: {
+        extensions: ['.js', '.mjs', '.ts', '.d.ts', '.tsx'],
+      },
     },
   },
   overrides: [
@@ -93,7 +95,9 @@ module.exports = defineConfig({
           },
           {
             pathPattern: '^(?:dev|peer|optional|bundled)?[Dd]ependencies$',
-            order: { type: 'asc' },
+            order: {
+              type: 'asc',
+            },
           },
         ],
       },
@@ -137,26 +141,50 @@ module.exports = defineConfig({
   ],
   rules: {
     // js/ts
-    camelcase: ['error', { properties: 'never' }],
+    camelcase: [
+      'error',
+      {
+        properties: 'never',
+      },
+    ],
     // "no-console": ["warn", { allow: ["error"] }],
     'no-debugger': 'warn',
-    'no-constant-condition': ['error', { checkLoops: false }],
+    'no-constant-condition': [
+      'error',
+      {
+        checkLoops: false,
+      },
+    ],
     'no-restricted-syntax': ['error', 'LabeledStatement', 'WithStatement'],
     'no-return-await': 'error',
     'no-var': 'error',
-    'no-empty': ['error', { allowEmptyCatch: true }],
+    'no-empty': [
+      'error',
+      {
+        allowEmptyCatch: true,
+      },
+    ],
     'prefer-const': [
       'warn',
-      { destructuring: 'all', ignoreReadBeforeAssign: true },
+      {
+        destructuring: 'all',
+        ignoreReadBeforeAssign: true,
+      },
     ],
     'prefer-arrow-callback': [
       'error',
-      { allowNamedFunctions: false, allowUnboundThis: true },
+      {
+        allowNamedFunctions: false,
+        allowUnboundThis: true,
+      },
     ],
     'object-shorthand': [
       'error',
       'always',
-      { ignoreConstructors: false, avoidQuotes: true },
+      {
+        ignoreConstructors: false,
+        avoidQuotes: true,
+      },
     ],
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
@@ -195,9 +223,16 @@ module.exports = defineConfig({
     '@typescript-eslint/no-non-null-asserted-optional-chain': 'off',
     '@typescript-eslint/consistent-type-imports': [
       'error',
-      { disallowTypeAnnotations: false },
+      {
+        disallowTypeAnnotations: false,
+      },
     ],
-    '@typescript-eslint/ban-ts-comment': ['off', { 'ts-ignore': false }],
+    '@typescript-eslint/ban-ts-comment': [
+      'off',
+      {
+        'ts-ignore': false,
+      },
+    ],
 
     // vue
     'vue/no-v-html': 'off',
@@ -220,8 +255,7 @@ module.exports = defineConfig({
     ],
 
     // prettier
-    'prettier/prettier': 'error',
-
+    'prettier/prettier': ['error'],
     // import
     'import/first': 'error',
     'import/no-duplicates': 'error',
@@ -266,7 +300,12 @@ module.exports = defineConfig({
     'import/named': 'off',
 
     // eslint-plugin-eslint-comments
-    'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
+    'eslint-comments/disable-enable-pair': [
+      'error',
+      {
+        allowWholeFile: true,
+      },
+    ],
 
     // unicorn
     'unicorn/custom-error-definition': 'error',

@@ -1,7 +1,7 @@
 <template>
-  <a-button type="primary" @click="onButtonClick"
-    >custom button version:{{ packageConfig.version }}</a-button
-  >
+  <a-button type="primary" @click="onButtonClick">
+    custom button version:{{ packageConfig.version }}
+  </a-button>
 </template>
 
 <script setup>

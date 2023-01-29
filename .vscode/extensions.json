@@ -1,4 +1,5 @@
 {
+  // 插件推荐
   "recommendations": [
     "vue.volar",
     "esbenp.prettier-vscode",
