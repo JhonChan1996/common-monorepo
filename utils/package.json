@@ -1,10 +1,7 @@
 {
   "name": "@common/utils",
   "version": "0.0.1",
-  "description": "",
-  "keywords": [],
+  "private": true,
   "license": "ISC",
-  "author": "",
-  "main": "index.js",
-  "scripts": {}
+  "main": "index.js"
 }

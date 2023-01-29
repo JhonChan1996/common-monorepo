@@ -1,1 +1,1 @@
-console.log('import @common/utils success');
+export * from './file';

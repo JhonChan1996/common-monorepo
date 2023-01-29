@@ -7,17 +7,7 @@ const getPackages = (packagePath) => {
   const packages = fg.sync('*', { cwd: packagePath, onlyDirectories: true });
   return packages.filter((item) => item !== 'node_modules');
 };
-const scopes = [
-  ...getPackages('./'),
-  // 'commitlint',
-  // 'components',
-  // 'docs',
-  // 'eslint-config',
-  // 'prettier-config',
-  // 'request',
-  // 'scripts',
-  // 'utils',
-];
+const scopes = getPackages('./');
 module.exports = {
   rules: {
     // @see: https://commitlint.js.org/#/reference-rules
