@@ -19,13 +19,15 @@
   "scripts": {
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache --fix",
     "commit": "git-cz",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm"
   },
   "peerDependencies": {
     "eslint": ">= 8"
   },
   "dependencies": {
-    "@common/utils": "workspace:*"
+    "@common/utils": "workspace:*",
+    "only-allow": "^1.1.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
