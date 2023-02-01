@@ -253,7 +253,14 @@ module.exports = defineConfig({
         math: 'always',
       },
     ],
-
+    'vue/component-name-in-template-casing': [
+      'error',
+      'kebab-case',
+      {
+        registeredComponentsOnly: false,
+        ignores: [],
+      },
+    ],
     // prettier
     'prettier/prettier': ['error'],
     // import
