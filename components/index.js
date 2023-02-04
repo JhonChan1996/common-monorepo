@@ -1,2 +1,2 @@
-import cButton from './cButton';
-export { cButton };
+export * from './page-login';
+export * from './page-register';
